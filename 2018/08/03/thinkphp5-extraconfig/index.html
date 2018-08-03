@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Kwok,博客" />
+  <meta name="keywords" content="ThinkPHP5,extraconfig," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="胡编一通，乱写一气">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kwok&#39;s Notes">
-<meta property="og:url" content="http://blog.ikwok.cn/archives/index.html">
+<meta name="description" content="ThinkPHP5中想要保存一些配置到文件中，避免对数据库调用过多，需要使用扩展配置。  扩展配置扩展配置文件是由 extra_config_list 配置参数定义的额外的配置文件，默认会加载database和validate两个扩展配置文件。 V5.0.1开始，取消了 extra_config_list 配置参数，扩展配置文件直接放入application/extra目录会自动加载。 所以我们">
+<meta name="keywords" content="ThinkPHP5,extraconfig">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ThinkPHP5使用扩展配置保存配置到本地文件">
+<meta property="og:url" content="http://blog.ikwok.cn/2018/08/03/thinkphp5-extraconfig/index.html">
 <meta property="og:site_name" content="Kwok&#39;s Notes">
-<meta property="og:description" content="胡编一通，乱写一气">
+<meta property="og:description" content="ThinkPHP5中想要保存一些配置到文件中，避免对数据库调用过多，需要使用扩展配置。  扩展配置扩展配置文件是由 extra_config_list 配置参数定义的额外的配置文件，默认会加载database和validate两个扩展配置文件。 V5.0.1开始，取消了 extra_config_list 配置参数，扩展配置文件直接放入application/extra目录会自动加载。 所以我们">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-08-03T11:31:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kwok&#39;s Notes">
-<meta name="twitter:description" content="胡编一通，乱写一气">
+<meta name="twitter:title" content="ThinkPHP5使用扩展配置保存配置到本地文件">
+<meta name="twitter:description" content="ThinkPHP5中想要保存一些配置到文件中，避免对数据库调用过多，需要使用扩展配置。  扩展配置扩展配置文件是由 extra_config_list 配置参数定义的额外的配置文件，默认会加载database和validate两个扩展配置文件。 V5.0.1开始，取消了 extra_config_list 配置参数，扩展配置文件直接放入application/extra目录会自动加载。 所以我们">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.ikwok.cn/archives/"/>
+  <link rel="canonical" href="http://blog.ikwok.cn/2018/08/03/thinkphp5-extraconfig/"/>
 
 
 
 
 
-  <title>归档 | Kwok's Notes</title>
+  <title>ThinkPHP5使用扩展配置保存配置到本地文件 | Kwok's Notes</title>
   
 
 
@@ -143,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -271,190 +273,165 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.ikwok.cn/2018/08/03/thinkphp5-extraconfig/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Kwok">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/kwok.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kwok's Notes">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">ThinkPHP5使用扩展配置保存配置到本地文件</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-03T19:24:39+08:00">
+                2018-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 4 篇日志。 继续努力。
-      </span>
 
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/08/03/thinkphp5-extraconfig/" itemprop="url">
-              
-                <span itemprop="name">ThinkPHP5使用扩展配置保存配置到本地文件</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-08-03T19:24:39+08:00"
-              content="2018-08-03" >
-          08-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/07/14/git-clone-proxy/" itemprop="url">
-              
-                <span itemprop="name">git clone 速度太慢解决方案</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-14T14:15:22+08:00"
-              content="2018-07-14" >
-          07-14
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
+            
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2016">2016</h1>
-          </div>
-        
-        
 
-        
+          
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/20/centos-iptables-shadosocks/" itemprop="url">
-              
-                <span itemprop="name">CentOS 配置iptables 配合 shadowsocks</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-20T23:12:38+08:00"
-              content="2016-06-20" >
-          06-20
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+        </div>
+      </header>
+    
 
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2016/06/20/Full-Stack-Engineer/" itemprop="url">
-              
-                <span itemprop="name">怎样成为全栈工程师？</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-06-20T23:04:12+08:00"
-              content="2016-06-20" >
-          06-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <blockquote>
+<p>ThinkPHP5中想要保存一些配置到文件中，避免对数据库调用过多，需要使用扩展配置。</p>
+</blockquote>
+<h2 id="扩展配置"><a href="#扩展配置" class="headerlink" title="扩展配置"></a>扩展配置</h2><p>扩展配置文件是由 <strong>extra_config_list</strong> 配置参数定义的额外的配置文件，默认会加载database和validate两个扩展配置文件。</p>
+<p>V5.0.1开始，取消了 <strong>extra_config_list</strong> 配置参数，扩展配置文件直接放入application/extra目录会自动加载。</p>
+<p>所以我们需要一个函数来实现更新配置文件。</p>
+<a id="more"></a>
+<h3 id="自建函数"><a href="#自建函数" class="headerlink" title="自建函数"></a>自建函数</h3><h4 id="建立函数"><a href="#建立函数" class="headerlink" title="建立函数"></a>建立函数</h4><p>在common.php中，写入如下</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 修改扩展配置文件</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> array  $arr  需要更新或添加的配置</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> string $file 配置文件名(不需要后辍)</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> bool</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">extraconfig</span><span class="params">($arr = [], $file = <span class="string">'extraconfig'</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (is_array($arr)) &#123;</span><br><span class="line">        $filename = $file . EXT;</span><br><span class="line"> </span><br><span class="line">        $filepath = APP_PATH . <span class="string">'extra/'</span> . $filename;</span><br><span class="line">        <span class="keyword">if</span> (!file_exists($filepath)) &#123;</span><br><span class="line">            $conf = <span class="string">"&lt;?php return [];"</span>;</span><br><span class="line">            file_put_contents($filepath, $conf);</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        $conf = <span class="keyword">include</span> $filepath;</span><br><span class="line">        <span class="keyword">foreach</span> ($arr <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">            $conf[$key] = $value;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        $time = date(<span class="string">'Y/m/d H:i:s'</span>);</span><br><span class="line">        $str = <span class="string">"&lt;?php\r\n/**\r\n * 由extraconfig函数建立.\r\n * 更新时间：$time\r\n */\r\nreturn [\r\n"</span>;</span><br><span class="line">        <span class="keyword">foreach</span> ($conf <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line">            $str .= <span class="string">"\t'$key' =&gt; '$value',"</span>;</span><br><span class="line">            $str .= <span class="string">"\r\n"</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        $str .= <span class="string">'];'</span>;</span><br><span class="line"> </span><br><span class="line">        file_put_contents($filepath, $str);</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="调用函数"><a href="#调用函数" class="headerlink" title="调用函数"></a>调用函数</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$arr = <span class="keyword">array</span>(<span class="string">'title'</span> =&gt; <span class="string">'kwok'</span>);</span><br><span class="line">extraconfig($arr,<span class="string">'website_config'</span>);</span><br></pre></td></tr></table></figure>
+<h5 id="其他用法"><a href="#其他用法" class="headerlink" title="其他用法"></a>其他用法</h5><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (extraconfig(<span class="keyword">array</span>(<span class="string">'title'</span> =&gt; <span class="string">'kwok'</span>),<span class="string">'website_config'</span>)) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'成功'</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">'失败'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="读取配置"><a href="#读取配置" class="headerlink" title="读取配置"></a>读取配置</h3><p>设置完配置参数后，就可以使用get方法读取配置了，例如：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> Config::get(<span class="string">'配置参数1'</span>);</span><br></pre></td></tr></table></figure>
+<p>系统定义了一个助手函数config，以上可以简化为：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span> config(<span class="string">'配置参数1'</span>);</span><br></pre></td></tr></table></figure></p>
+<p>读取所有的配置参数：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dump(Config::get());</span><br><span class="line"> <span class="comment">// 或者 dump(config());</span></span><br></pre></td></tr></table></figure>
+<h4 id="读取扩展配置"><a href="#读取扩展配置" class="headerlink" title="读取扩展配置"></a>读取扩展配置</h4><p>需要注意的是，读取扩展配置时要这样：<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> Config(<span class="string">'website_config.title'</span>);</span><br></pre></td></tr></table></figure></p>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ThinkPHP5/" rel="tag"># ThinkPHP5</a>
+          
+            <a href="/tags/extraconfig/" rel="tag"># extraconfig</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/14/git-clone-proxy/" rel="next" title="git clone 速度太慢解决方案">
+                <i class="fa fa-chevron-left"></i> git clone 速度太慢解决方案
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -462,6 +439,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -482,8 +463,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -554,6 +544,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#扩展配置"><span class="nav-number">1.</span> <span class="nav-text">扩展配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#自建函数"><span class="nav-number">1.1.</span> <span class="nav-text">自建函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#建立函数"><span class="nav-number">1.1.1.</span> <span class="nav-text">建立函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#调用函数"><span class="nav-number">1.1.2.</span> <span class="nav-text">调用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#其他用法"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">其他用法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#读取配置"><span class="nav-number">1.2.</span> <span class="nav-text">读取配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#读取扩展配置"><span class="nav-number">1.2.1.</span> <span class="nav-text">读取扩展配置</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -688,6 +694,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

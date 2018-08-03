@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ThinkPHP5使用扩展配置保存配置到本地文件]]></title>
+    <url>%2F2018%2F08%2F03%2Fthinkphp5-extraconfig%2F</url>
+    <content type="text"><![CDATA[ThinkPHP5中想要保存一些配置到文件中，避免对数据库调用过多，需要使用扩展配置。 扩展配置扩展配置文件是由 extra_config_list 配置参数定义的额外的配置文件，默认会加载database和validate两个扩展配置文件。 V5.0.1开始，取消了 extra_config_list 配置参数，扩展配置文件直接放入application/extra目录会自动加载。 所以我们需要一个函数来实现更新配置文件。 自建函数建立函数在common.php中，写入如下 12345678910111213141516171819202122232425262728293031323334353637/** * 修改扩展配置文件 * @param array $arr 需要更新或添加的配置 * @param string $file 配置文件名(不需要后辍) * @return bool */function extraconfig($arr = [], $file = 'extraconfig')&#123; if (is_array($arr)) &#123; $filename = $file . EXT; $filepath = APP_PATH . 'extra/' . $filename; if (!file_exists($filepath)) &#123; $conf = "&lt;?php return [];"; file_put_contents($filepath, $conf); &#125; $conf = include $filepath; foreach ($arr as $key =&gt; $value) &#123; $conf[$key] = $value; &#125; $time = date('Y/m/d H:i:s'); $str = "&lt;?php\r\n/**\r\n * 由extraconfig函数建立.\r\n * 更新时间：$time\r\n */\r\nreturn [\r\n"; foreach ($conf as $key =&gt; $value) &#123; $str .= "\t'$key' =&gt; '$value',"; $str .= "\r\n"; &#125; $str .= '];'; file_put_contents($filepath, $str); return true; &#125; else &#123; return false; &#125;&#125; 调用函数12$arr = array('title' =&gt; 'kwok');extraconfig($arr,'website_config'); 其他用法12345if (extraconfig(array('title' =&gt; 'kwok'),'website_config')) &#123; return '成功';&#125;else&#123; return '失败';&#125; 读取配置设置完配置参数后，就可以使用get方法读取配置了，例如： 1echo Config::get('配置参数1'); 系统定义了一个助手函数config，以上可以简化为：1echo config('配置参数1'); 读取所有的配置参数： 12dump(Config::get()); // 或者 dump(config()); 读取扩展配置需要注意的是，读取扩展配置时要这样：1return Config('website_config.title');]]></content>
+      <tags>
+        <tag>ThinkPHP5</tag>
+        <tag>extraconfig</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[git clone 速度太慢解决方案]]></title>
     <url>%2F2018%2F07%2F14%2Fgit-clone-proxy%2F</url>
     <content type="text"><![CDATA[在使用git clone时，速度一直只有几十kb，做了个路由后发现解析到了新加坡，并且是从日本绕到新加坡，延迟极高。修改host指定到洛杉矶后依然无法达到理想速度，待一番折腾后解决，记下操作。 环境 OS X 10.11 iTerm2 shadowsocksr git shadowsocksr配置查看shadowsocksr是ssr的mac版本，默认的http代理端口为1086，可在“HTTP代理设置”中查看和修改。 git配置12git config --global http.proxy 127.0.0.1:1087git config --global https.proxy 127.0.0.1:1087 以上两行配置了git的http和https代理，但是需要注意的是git clone的地址。如果是git@github.com开头则是以ssh协议进行访问，上边设置的代理对git clone的速度无效，那么我们需要转换地址。 转换git clone1234#原git clonegit clone git@github.com:powerline/fonts.git#更改后git clone https://github.com/powerline/fonts.git 最终效果]]></content>
